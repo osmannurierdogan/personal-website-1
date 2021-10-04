@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap");
+
+:root {
+  --desktop-breakpoint: 1440px;
+  --mobile-breakpoint: 375px;
+  --main-background-color: #090b1a;
+  --card-background-color: #1b1938;
+  --accent-font-color: #aa5cdb;
+  --main-paragraph-font-color: #ffffffbf;
+  --main-heading-font-color: #ffffff;
+  --stats-heading-font-color: #ffffff99;
+  --font-size: 15px;
+  --primary-font-family: "Inter", sans-serif;
+  --secondary-font-family: "Lexend Deca", sans-serif;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: var(--main-background-color);
+}
+/* ! CARD STYLING START */
+.content-area {
+  background-color: var(--card-background-color);
+  display: flex;
+  flex-direction: row;
+  margin: 12% auto;
+  border-radius: 15px;
+  max-width: 80rem;
+  justify-content: center;
+}
+.text-content-area {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 3rem;
+}
+.text-content-area-title {
+  font-size: 2.5rem;
+  color: var(--main-heading-font-color);
+  font-family: var(--primary-font-family);
+}
+.text-content-area-title span {
+  color: var(--accent-font-color);
+}
+.text-content-area-detail {
+  color: var(--main-paragraph-font-color);
+  font-family: var(--secondary-font-family);
+}
+.text-content-area-stats {
+  display: flex;
+  flex-direction: row;
+  font-family: var(--primary-font-family);
+  justify-content: space-around;
+  text-align: center;
+  font-size: var(--font-size);
+}
+.text-content-area-stat {
+  flex-direction: column;
+  text-transform: uppercase;
+}
+.text-area-content-stat-number {
+  display: block;
+  color: var(--main-heading-font-color);
+  font-size: 1.5rem;
+}
+.text-area-content-stat-detail {
+  color: var(--main-paragraph-font-color);
+}
+/* .image-content-area {
+  width: 50%;
+  margin: 0;
+  padding: 0;
+} */
+/* .image-content-area img{
+  box-sizing: border-box;
+} */
+.image-content-area-image {
+  border-radius: 15px;
+  position: relative;
+  background-color: var(--accent-font-color);
+}
+/* ! CARD STYLING END */
+
+/* ! FOOTER SECTION STYLING START */
+.attribution {
+  font-size: var(--font-size);
+  font-family: var(--primary-font-family);
+  text-align: center;
+  color: var(--main-heading-font-color);
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+  font-weight: bold;
+}
+/* ! FOOTER SECTION STYLING END */

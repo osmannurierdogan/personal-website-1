@@ -1,0 +1,379 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+/* ! ROOT CASES START */
+:root {
+  --contacts-section-color: #ff4a4a;
+  --default-button-background-color: #3c3d40;
+  --first-text-color: #67696e;
+  --horizontal-row-background-color: #1f2021;
+  --main-background-color: #161617;
+  --portfolio-section-color: #ffc455;
+  --profile-section-color: #3a66e6;
+  --resume-section-color: #1bc9e4;
+  --second-text-color: #a3a6ad;
+  --testimonials-section-color: #ff754a;
+  --third-text-color: #ffffff;
+  --instagram-color: #bc2a8d;
+  --facebook-color: #4267b2;
+  --linkedin-color: #0072b1;
+  --twitter-color: #1da1f2;
+  --youtube-color: #ff1a1a;
+  --whatsapp-color: #4fce5d;
+  --first-font-family: "Montserrat", sans-serif;
+  --second-font-family: "Roboto", sans-serif;
+}
+/* ! ROOT CASES END */
+
+/* ! BOOTSTRAP ROOT CASES START
+:root {
+  --blue: #007bff;
+  --indigo: #6610f2;
+  --purple: #6f42c1;
+  --pink: #e83e8c;
+  --red: #dc3545;
+  --orange: #fd7e14;
+  --yellow: #ffc107;
+  --green: #28a745;
+  --teal: #20c997;
+  --cyan: #17a2b8;
+  --white: #fff;
+  --gray: #6c757d;
+  --gray-dark: #343a40;
+  --primary: #007bff;
+  --secondary: #6c757d;
+  --success: #28a745;
+  --info: #17a2b8;
+  --warning: #ffc107;
+  --danger: #dc3545;
+  --light: #f8f9fa;
+  --dark: #343a40;
+  --breakpoint-xs: 0;
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+  --font-family-sans-serif: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+! BOOTSTRAP ROOT CASES END */
+
+/* ! ELEMENT STYLING START */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+body {
+  background-color: var(--main-background-color);
+  color: var(--second-text-color);
+  font-family: var(--second-font-family);
+  scroll-behavior: smooth;
+}
+/* ! ELEMENT STYLING END */
+
+/* ! TOP COLORIZED SECTION STYLING START */
+.top-colorized-area {
+  display: flex;
+  flex-direction: row;
+  height: 1rem;
+  justify-content: space-between;
+  width: 100%;
+}
+.top-colorized-area span {
+  width: 20%;
+}
+.top-colorized-area-style-1 {
+  background-color: var(--profile-section-color);
+}
+.top-colorized-area-style-2 {
+  background-color: var(--resume-section-color);
+}
+.top-colorized-area-style-3 {
+  background-color: var(--portfolio-section-color);
+}
+.top-colorized-area-style-4 {
+  background-color: var(--testimonials-section-color);
+}
+.top-colorized-area-style-5 {
+  background-color: var(--contacts-section-color);
+}
+/* ! TOP COLORIZED SECTION STYLING END */
+
+/* ! SOCIAL MEDIA SECTION STYLING START */
+.social-media-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 1rem;
+  padding: 1rem;
+}
+.social-media-link {
+  background-color: var(--main-background-color);
+  border: none;
+  color: var(--second-text-color);
+  cursor: pointer;
+  font-size: 2rem;
+  padding: 1rem;
+}
+/* .instagram:hover{
+  color: var(--instagram-color);
+  transition: 0.2s;
+  text-shadow:
+    0 0 5px var(--instagram-color),
+    0 0 10px var(--instagram-color),
+    0 0 20px var(--instagram-color),
+    0 0 40px var(--instagram-color),
+    0 0 80px var(--instagram-color),
+    0 0 90px var(--instagram-color),
+    0 0 100px var(--instagram-color),
+    0 0 150px var(--instagram-color);
+}
+.facebook:hover{
+  color: var(--facebook-color);
+  transition: 0.2s;
+  text-shadow:
+    0 0 5px var(--facebook-color),
+    0 0 10px var(--facebook-color),
+    0 0 20px var(--facebook-color),
+    0 0 40px var(--facebook-color),
+    0 0 80px var(--facebook-color),
+    0 0 90px var(--facebook-color),
+    0 0 100px var(--facebook-color),
+    0 0 150px var(--facebook-color);
+}
+.twitter:hover{
+  color: var(--twitter-color);
+  transition: 0.2s;
+  text-shadow:
+    0 0 5px var(--twitter-color),
+    0 0 10px var(--twitter-color),
+    0 0 20px var(--twitter-color),
+    0 0 40px var(--twitter-color),
+    0 0 80px var(--twitter-color),
+    0 0 90px var(--twitter-color),
+    0 0 100px var(--twitter-color),
+    0 0 150px var(--twitter-color);
+}
+.linkedin:hover{
+  color: var(--linkedin-color);
+  transition: 0.2s;
+  text-shadow:
+    0 0 5px var(--linkedin-color),
+    0 0 10px var(--linkedin-color),
+    0 0 20px var(--linkedin-color),
+    0 0 40px var(--linkedin-color),
+    0 0 80px var(--linkedin-color),
+    0 0 90px var(--linkedin-color),
+    0 0 100px var(--linkedin-color),
+    0 0 150px var(--linkedin-color);
+}
+.whatsapp:hover{
+  color: var(--whatsapp-color);
+  transition: 0.2s;
+  text-shadow:
+    0 0 5px var(--whatsapp-color),
+    0 0 10px var(--whatsapp-color),
+    0 0 20px var(--whatsapp-color),
+    0 0 40px var(--whatsapp-color),
+    0 0 80px var(--whatsapp-color),
+    0 0 90px var(--whatsapp-color),
+    0 0 100px var(--whatsapp-color),
+    0 0 150px var(--whatsapp-color);
+}
+.youtube:hover{
+  color: var(--youtube-color);
+  transition: 0.2s;
+  text-shadow:
+    0 0 5px var(--youtube-color),
+    0 0 10px var(--youtube-color),
+    0 0 20px var(--youtube-color),
+    0 0 40px var(--youtube-color),
+    0 0 80px var(--youtube-color),
+    0 0 90px var(--youtube-color),
+    0 0 100px var(--youtube-color),
+    0 0 150px var(--youtube-color);
+} */
+/* .social-media-link:hover:before{
+  filter: blur(3px);
+  transform: scale(1.2);
+  box-shadow: 0 0 15px #d35400;
+} */
+/* .facebook:hover:before{
+  box-shadow: 0 0 15px #4267B2;
+}
+.twitter:hover:before{
+  box-shadow: 0 0 15px #1DA1F2;
+}
+.instagram:hover:before{
+  box-shadow: 0 0 15px #E1306C;
+}
+.linkedin:hover:before{
+  box-shadow: 0 0 15px #2867B2;
+}
+.youtube:hover:before{
+  box-shadow: 0 0 15px #ff0000;
+} */
+.facebook:hover {
+  color: var(--facebook-color);
+  /* box-shadow: 0 0 15px #4267B2;
+  text-shadow: 0 0 15px #4267B2; */
+}
+.twitter:hover {
+  color: var(--twitter-color);
+  /* box-shadow: 0 0 15px #1DA1F2;
+  text-shadow: 0 0 15px #1DA1F2; */
+}
+.instagram:hover {
+  color: var(--instagram-color);
+  /* box-shadow: 0 0 15px #E1306C;
+  text-shadow: 0 0 15px #E1306C; */
+}
+.linkedin:hover {
+  color: var(--linkedin-color);
+  /* box-shadow: 0 0 15px #2867B2;
+  text-shadow: 0 0 15px #2867B2; */
+}
+.youtube:hover {
+  color: var(--youtube-color);
+  /* box-shadow: 0 0 15px #ff0000;
+  text-shadow: 0 0 15px #ff0000; */
+}
+.whatsapp:hover {
+  color: var(--whatsapp-color);
+  /* box-shadow: 0 0 15px #ff0000;
+  text-shadow: 0 0 15px #ff0000; */
+}
+/* ! SOCIAL MEDIA SECTION STYLING END */
+
+/* ! MAIN CONTAINER STYLING START */
+.main-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: auto 5%;
+  justify-content: center;
+  align-items: center;
+}
+/* ! MAIN CONTAINER STYLING END */
+
+/* ! COMMON SECTIONS AND BUTTONS STYLING START */
+.portfolio-section,
+.resume-section,
+.profile-section,
+.testimonials-section,
+.contacts-section {
+  display: flex;
+  flex-direction: row;
+}
+.section-button {
+  border: none;
+  border-radius: 5px;
+  color: var(--third-text-color);
+  cursor: pointer;
+  height: 15%;
+  margin: 1rem;
+  padding: 1rem;
+  /* width: 10%; */
+  /* display: none; */
+}
+.section-button i {
+  font-size: 1.8rem;
+  height: 1.8rem;
+  width: 1.8rem;
+}
+.profile-button {
+  background-color: var(--profile-section-color);
+}
+.resume-button {
+  background-color: var(--resume-section-color);
+}
+.portfolio-button {
+  background-color: var(--portfolio-section-color);
+}
+.testimonials-button {
+  background-color: var(--testimonials-section-color);
+}
+.contacts-button {
+  background-color: var(--contacts-section-color);
+}
+.main-content-area {
+  margin: 1rem 1rem 1rem 0;
+  width: 800px;
+}
+.section-expand-button {
+  background-color: var(--default-button-background-color);
+  border: none;
+  border-radius: 5px;
+  color: var(--second-text-color);
+  cursor: pointer;
+  height: 15%;
+  margin: 1rem 1rem 1rem 0;
+  padding: 1rem;
+  /* width: 10%; */
+}
+/* ! COMMON SECTIONS AND BUTTONS STYLING END */
+
+.profile-section .main-content-area {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.profile-section .main-content-area img {
+  border-radius: 100%;
+}
+.profile-informations-area {
+  margin: auto 0.5rem;
+}
+
+.resume-section-content-area-title,
+.portfolio-section-content-area-title,
+.testimonials-section-content-area-title,
+.contacts-section-content-area-title {
+  text-align: left;
+  width: max-content;
+  color: white;
+  padding: 1rem;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+.resume-section-content-area-title{
+  background-color: var(--resume-section-color);
+}
+.portfolio-section-content-area-title{
+  background-color: var(--portfolio-section-color);
+}
+.testimonials-section-content-area-title{
+  background-color: var(--testimonials-section-color);
+}
+.contacts-section-content-area-title{
+  background-color: var(--contacts-section-color);
+}
+
+/* ! PORTFOLIO SECTION STYLING START */
+.portfolio-list{
+  justify-content: center;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.portfolio-item{
+  border: 1px solid red;
+  width: 10rem;
+  height: 10rem;
+  padding: 15px;
+  margin: 1rem
+}
+.portfolio-item{
+  list-style: none;
+}
+.portfolio-item .fem-challenge-1{
+  background-color: var(--portfolio-section-color);
+  background-image: url('../../src/assets/frontend-mentor-challenges/challenge-1/assets/design/desktop-design.jpg');
+  background-size: 100%;
+  background-origin: content-box;
+}
+/* ! PORTFOLIO SECTION STYLING END */

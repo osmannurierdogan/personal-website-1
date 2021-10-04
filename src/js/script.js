@@ -1,0 +1,1 @@
+const adana = document.getElementById('OSMAN')
